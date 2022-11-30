@@ -6,6 +6,15 @@
 a{
     text-decoration: none;
 }
+footer a{
+    color: white;
+}
+.navbar-brand{
+    color: white;
+    font-style: italic;
+    font-family: serif;
+    font-weight: 600;
+}
 /* -----INDEX------ */
 /* header */
 header{
@@ -27,8 +36,36 @@ header ul{
     gap: 20px;
     
     
-
 }
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+    background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+.btncontact{
+    background-color: steelblue;
+    border-radius: 10px;
+}
+
+
 header ul li{
     color: white;
     width: fit-content;
@@ -40,126 +77,118 @@ header ul li{
 }
 
 /* ------------Comienzo main------------ */
+.carrusel{
+    display: flex;
+}
+.slide{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.slide img{
+    height: 65vh;
+    justify-content: center;
+}
 .caja1{
     background-image: url(../img/breakfast.jpg);
     background-size: cover;
-    height:40vh;
+    background-repeat: no-repeat;
+    background-position: center;
     padding:100px;
     text-align: center;
-    background-attachment: fixed;;
+    background-attachment: fixed;
 }
-.caja1-1{
-    color:skyblue;
-    font-size: 3rem;
+.container{
+    display: grid;
+    gap: 20px;
 }
-
-.caja2{
-    background-color: white;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    text-align: center;
-    font-size: 1rem
-}
-.desaindex{
-    padding-bottom: 20px;
-    display: flex;
-    text-align: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    align-items: center;
-    align-content: center
-}
-.cajacumple{
-    background-image: url(../img/desayunos/desayunocumple.jpg);
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    border: solid 3px black;
-    font-size: 1rem;
-    text-align: center;
-    background-position: bottom;
-    color: blue;
-}
-.cajasaludable{
-        background-image: url(../img/desayunos/desayunosaludable.jpg);
-        background-position: center;
-        background-size: cover;
-        width: 200px;
-        height: 200px;
-        border: solid 3px black;
-        font-size: 1rem;
-        text-align: center;
-        color: blue;
-    }
-
-.cajaromanticos{
-    background-image: url(../img/desayunos/desayunoaniversario.jpg);
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    border: solid 3px black;
-    font-size: 1rem;
-    background-position: bottom;
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
     
 }
-.cajapersonalizados{
-    background-image: url(../img/desayunos/personalizado.jpeg);
-    background-size: cover;
-    width: 200px;
-    height: 200px;
-    border: solid 3px black;
-    font-size: 1rem;
-    background-position: bottom;
-}
-h4{
-    text-align: center;
-    
-}
-.vermasindex{
-    border: 2px solid black;
-    padding: 5px 5px;
-    border-radius: 20px;
+.textocard{
+    height: 100%;
     display: flex;
-    justify-content: center;
-}
-.caja333{
-    background-color: white;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    text-align: center;
     flex-direction: column;
+    justify-content: center;
 }
 
-@media(min-width:768px){
+.desayunodesktop{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    place-content: center;
 }
+
+.card-img-overlay{
+    background-color: #9a9d9bc3;
+    text-align: center;
+    
+}
+.container-cardimg{
+
+    overflow: hidden;
+    position: relative;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+}
+.container-cardimg:hover{
+    transform: scale(1.1);
+    box-shadow: 13px 15px 37px black;
+}
+.imgfin{
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat:space;
+}
+.btn-foot{
+    background-color:cadetblue;
+}
+.btn-new{
+    background-color: aliceblue;
+}
+.textofin{
+    font-size: larger;
+    font-style: italic;
+    font-family: serif;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
 
 /* -----------FOOTER------------ */
-footer{
-    background-color: darksalmon;
-    display: flex;
-    background-position:bottom;
-    flex-direction:row;
-    justify-content: space-between;
-    align-content:space-between;
-    padding: 25px;
-}
+
+
 footer ul li{
     list-style: none;
     
+}
+.bg-footer{
+    background-color: navy;
+    color: white;
 }
 #insta{
     width: 2rem;
 }
 #whatsapp{
     width: 2rem;
-}
+} */
 
 
 /* -------------page desayunos------------------- */
