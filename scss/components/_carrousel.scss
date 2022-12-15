@@ -1,0 +1,13 @@
+.carrusel{
+    
+    display: flex;
+    &__slide{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    &.slide img{
+        height: 65vh;
+        justify-content: center;
+    }
+}

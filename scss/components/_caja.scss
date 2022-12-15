@@ -1,0 +1,44 @@
+.caja{
+    padding:20px;
+    width: auto;
+    height: 500px;
+    
+
+    &__textoh{
+        color: aliceblue;
+        text-decoration: none;
+        text-shadow: 1px 1px  blue;
+        
+    }
+    
+    &__encargo{
+        background-image: url(../img/imgchicas/breakfast.jpg);
+        text-shadow: 10px black;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: top;
+        border-radius: 20px;
+        box-shadow: 5px 8px 12px black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+
+    }
+    &__cualquieres{
+        margin-top: 25px;
+        
+        border-radius: 20px;
+        background-color: rgba(6, 161, 233, 0.595);
+        box-shadow: 5px 8px 12px black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+a{
+    text-decoration: none;
+}
+
+}

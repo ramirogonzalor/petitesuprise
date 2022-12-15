@@ -1,0 +1,99 @@
+.bodycontact{
+    background-color: #807EFD;
+    .tituloscontact{
+        color: white;
+    }
+    .container1{
+        display: flex;
+        background-color: #fff;
+        height: 750px;
+        width: 1000px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        margin: auto;
+        margin-top: 50px;
+        border-radius: 25px;
+        .form{
+            padding: 30px 80px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .form h2{
+            font-size: 45px;
+            color: #4844A9;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+        .form p{
+            font-size: 16px;
+            color: #969EAE;
+            margin-bottom: 25px;
+        }
+        label{
+            font-size: 15px;
+            color: #969EAE;
+            margin-bottom: 15px;
+        }
+        .box{
+            border: 0;
+            background-color: #f4f4fd;
+            padding: 15px;
+            border-radius: 25px;
+            margin-bottom: 25px;
+            outline: none;
+        }
+        .submit{
+            background-color: #817ffe;
+            border: 0;
+            padding: 15px;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 25px;
+            width: 250px;
+            margin-top: 25px;
+            box-shadow: 0 0 20px rgba(201, 199, 253, 0.5);
+        }
+        .info{
+            padding: 50px;
+
+        }
+        .img-1{
+            width: 350px;
+            margin-bottom: 75px;
+        }
+        .location{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 60px;
+        }
+        .icons{
+            display: flex;
+            margin-bottom: 31px;
+
+        }
+        .icons img{
+            width: 35px;
+            margin-right: 10px;
+        }
+        .icons p{
+            font-size: 14px;
+            color: #969EAE;
+        }
+        
+    }
+    @media (max-width: 990px){
+        .container1{
+            width: 350px;
+            height: 800px;
+            margin-top: 50px;
+        }
+        .info{
+            display: none;
+
+        }
+        .form{
+            width: 100%;
+            padding: 30px;
+        }
+    }
+}

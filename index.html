@@ -11,14 +11,11 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap" rel="stylesheet">
     <title> Petite Suprise</title>
+    <link rel="icon" type="image/png" href="./img/iconopetite.ico">
 </head>
 
 <body>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone=5491132940905&text=Hola%21%20Quisiera%20encargar%20un%20desayuno."
-        class="float" target="_blank">
-        <i class="fa fa-whatsapp my-float"></i>
-    </a>
+
     <!-- --------comienzo del header--------- -->
     <header class="navbar navbar-expand-lg">
         <div class="container">
@@ -53,21 +50,22 @@
     <!------------------Comienzo del Main ----------------------------->
     <main>
         <section>
-            <div class="container-fluid gap-30">
-                <div class="row">
-                    <div class="caja1 text-light col-12">
-                        <h2 class="caja1-1">Encarga tus <br> Desayunos a domicilio</h2>
+            <div class="container gap-30">
+                <div class="row caja">
+                    <div class="caja__encargo col-12 text-center">
+                        <h2 class="caja__textoh">Encarga tus <br> Desayunos a domicilio</h2>
                     </div>
                     <div
-                        class="caja2 text-center p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
-                        <a href="./pages/desayunos.html">
-                            <h2>¿Que desayuno sorpresa quieres?</h2>
-                            <h3>Elige el momento y hazlo perfecto con nuestros <strong>desayunos personalizados</strong>
+                        class="caja__cualquieres text-center border">
+                        <a href="./pages/desayunos.html" class="caja__a">
+                            <h2 class="caja__textoh">¿Que desayuno sorpresa quieres?</h2>
+                            <h3 class="caja__textoh">Elige el momento y hazlo perfecto con nuestros <strong>desayunos personalizados</strong>
                             </h3>
                         </a>
                     </div>
                 </div>
         </section>
+        <!-- carrousel -->
         <section class="carrusel justify-content-center d-lg-none">
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
                 <div class="carousel-indicators">
@@ -87,42 +85,42 @@
                         aria-label="Slide 7"></button>
                 </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-bs-interval="1000">
                         <img src="./img/desayunos/desayunoaniversario.jpg" class="d-block w-100" alt="Aniversarios">
                         <div class="carousel-caption">
                             <h5>Desayunos Aniversarios</h5>
                             <p>Sorprende a esa persona especial en su dia.</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./img/desayunos/desayunocumple.jpg" class="d-block w-100" alt="cumpleaños">
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/imgchicas/desayunocumple.jpg" class="d-block w-100" alt="cumpleaños">
                         <div class="carousel-caption">
                             <h5>Desayunos de cumpleaños</h5>
                             <p>El mejor regalo de cumpleaños <br>un buen desayuno.</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./img/desayunos/desayunomadre.jpg" class="d-block w-100" alt="Mamá">
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./img/imgchicas/desayunomadre.jpg" class="d-block w-100" alt="Mamá">
                         <div class="carousel-caption">
                             <h5>Para Mama</h5>
                             <p>Que la reina comience el dia con un buen <br><strong>desayuno</strong>.</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./img/desayunos/desayunopadre.jpg" class="d-block w-100" alt="Papá">
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="./img/imgchicas/desayunopadre.jpg" class="d-block w-100" alt="Papá">
                         <div class="carousel-caption">
                             <h5>Para papa</h5>
                             <p>Sorprende a ese heroe sin capa con <br> nuestros desayunos.</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="./img/desayunos/desayunosaludable.jpg" class="d-block w-100" alt="Saludables">
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="./img/imgchicas/desayunosaludable.jpg" class="d-block w-100" alt="Saludables">
                         <div class="carousel-caption">
                             <h5>Desayunos Saludables</h5>
                             <p>Empieza el dia con toda la energia que necesitas.</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="6000">
                         <img src="./img/desayunos/desayunopersonalizado.jpeg" class="d-block w-100"
                             alt="Personalizados">
                         <div class="carousel-caption">
@@ -130,7 +128,7 @@
                             <p>Para cualquier ocasión con lo que mas deseas.</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="7000">
                         <img src="./img/desayunos/desayunomate.jpeg" class="d-block w-100 " alt="Mates">
                         <div class="carousel-caption text-dark">
                             <h5>Desayuna con un Mate</h5>
@@ -150,37 +148,38 @@
                 </button>
             </div>
         </section>
+        <!-- tarjetas -->
         <section>
             <div class="container d-none d-sm-none d-md-none d-lg-block">
                 <div class="row">
-                    <div class="desayunodesktop text-center">
-                        <div class="card" style="background-image: url(./img/desayunos/desayunoaniversario.jpg)">
-                            <div class="textocard text-light">
+                    <div class="card text-center">
+                        <div class="card__aniversario" style="background-image: url(./img/imgchicas/desayunoaniversario.jpg)">
+                            <div class="card__texto text-light">
                                 <h3>Aniversarios</h3>
                             </div>
                         </div>
-                        <div class="card" style="background-image: url(./img/desayunos/desayunocumple.jpg)">
-                            <div class="textocard">
+                        <div class="card__cumpleaños" style="background-image: url(./img/imgchicas/desayunocumple.jpg)">
+                            <div class="card__texto">
                                 <h3>cumpleaños</h3>
                             </div>
                         </div>
-                        <div class="card" style="background-image: url(./img/desayunos/desayunomadre.jpg)">
-                            <div class="textocard">
+                        <div class="card__mama" style="background-image: url(./img/imgchicas/desayunomadre.jpg)">
+                            <div class="card__texto">
                                 <h3>Para MAMÁ</h3>
                             </div>
                         </div>
-                        <div class="card" style="background-image: url(./img/desayunos/desayunopadre.jpg)">
-                            <div class="textocard text-light">
+                        <div class="card__papa" style="background-image: url(./img/imgchicas/desayunopadre.jpg)">
+                            <div class="card__texto text-light">
                                 <h3>Para PAPÁ</h3>
                             </div>
                         </div>
-                        <div class="card" style="background-image: url(./img/desayunos/desayunosaludable.jpg)">
-                            <div class="textocard text-light">
+                        <div class="card__saludables" style="background-image: url(./img/imgchicas/desayunosaludable.jpg)">
+                            <div class="card__texto text-light">
                                 <h3>Saludables</h3>
                             </div>
                         </div>
-                        <div class="card" style="background-image: url(./img/desayunos/desayunopersonalizado.jpeg)">
-                            <div class="textocard">
+                        <div class="card__personalizados" style="background-image: url(./img/desayunos/desayunopersonalizado.jpeg)">
+                            <div class="card__texto">
                                 <h3>Personalizados</h3>
                             </div>
                         </div>
@@ -188,45 +187,41 @@
                 </div>
             </div>
         </section>
+        <!-- boton contactenos -->
         <section class="container">
-            <div class="row">
-                <div class="d-grid gap-3"><a
+            <div class="row vermas">
+                <div class="btn col-4 mx-auto"><a
                         href="http://api.whatsapp.com/send?phone=5491132940905&text=Hola%21%20Quisiera%20encargar%20un%20desayuno."
-                        target="_blank" rel="noopener noreferrer"></a>
-                    <button class="btncontact" type="button">Contactanos</button>
+                        target="_blank" rel="noopener noreferrer">
+                    <button class="btn" type="button">Contactanos</button></a>
                 </div>
             </div>
         </section>
-
-        <section class="container-cardimg">
-            <div class="row">
-                <img src="./img/desayunos/desaprincipal.jpeg" class="img-fluid w-100 d-md-none" alt="desayuno">
-                <p class="textofin display-4 text-center w-auto">Las cajas de desayuno regalo más vendidas! <br> No te
+        <!--  -->
+        <section class="container">
+            <div class="row imgfin">
+                
+                <p class="textofin display-4  w-auto">Las cajas de desayuno regalo más vendidas! <br> No te
                     pierdas nuestras cajas
                     de desayuno mas enviadas! <br> ¿cuál prefieres que te enviemos?</p>
             </div>
-            <div class="row">
-                <img src="./img/desayunos/desaprincipal.jpeg" class="imgfin w-100 d-none d-sm-none d-md-block" alt="desayuno">
-                <p class="textofin display-4 text-center w-auto">Las cajas de desayuno regalo más vendidas! <br> No te
-                    pierdas nuestras cajas
-                    de desayuno mas enviadas! <br> ¿cuál prefieres que te enviemos?</p>
-            </div>
+            
         </section>
 
 
-        <div class="card">
-            <div class="card-body">
-                <p class="card-text p-1"><small class="text-muted p-1">Podes pagar de manera facil y segura!</small></p>
+        <div class="container">
+            <div class="row pagos">
+                <p class="pagos__text p-1"><small class="text-muted p-1">Podes pagar de manera facil y segura!</small></p>
             </div>
-            <img src="./img/mercadopago.jpg" class="card-img-top" alt="...">
+            <img src="./img/mercadopago.jpg" class="pagos__img img-fluid" alt="Pagos">
         </div>
     </main>
 
     <!----------------FOOTER------------------ -->
 
-    <footer class="bg-footer">
+    <footer>
 
-        <div class="footer container-fluid bg-navy position-relative bottom-0 end-0 ">
+        <div class="footer container-fluid position-relative bottom-0 end-0 border-buttom ">
             <div class="row border-bottom p-3">
 
                 <div class="dropdown col-6 col-lg-4 d-lg-none">
@@ -246,7 +241,7 @@
 
 
 
-                <div class="footerpetite col-6 col-lg-4 text-light d-none d-sm-none d-md-none d-lg-block">
+                <div class="footerpetite col-6 col-lg-4 d-none d-sm-none d-md-none d-lg-block">
                     <h2>Petite <br> Suprise</h2>
                     <ul>
                         <li><a href="./pages/nosotros.html">Nosotros</a> </li>

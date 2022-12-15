@@ -1,0 +1,22 @@
+@import "./utils/variables";
+@import "./utils/mixin";
+
+@import "./base/base";
+
+@import "./components/header.scss";
+@import "./components/navbar";
+@import "./components/caja";
+@import "./components/carrousel" ;
+@import "./components/botones";
+@import "./components/pagos";
+@import "./components/footer.scss";
+@import "./components/tarjetas";
+@import "./components/imagenfinindex";
+@import "./components/desayunos";
+
+
+@import "./pages/index";
+@import "./pages/desayuno";
+@import "./pages/contacto";
+@import "./pages/nosotros";
+@import "./pages/preguntasfrecuentes";

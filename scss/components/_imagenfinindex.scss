@@ -1,0 +1,16 @@
+.imgfin{
+    text-align: center;
+    background-image: url(../img/imgchicas/desaprincipal.jpeg);
+    color: white;
+    text-shadow: 3px 3px black;
+    display: grid;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .textofin{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+    }
+    
+}
