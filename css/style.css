@@ -190,9 +190,11 @@ footer {
   text-decoration: underline;
   font-size: 2rem; }
 
+
 .contenedordesayuno {
   padding-bottom: 20px;
   display: flex;
+  gap: 20px;
   text-align: center;
   flex-direction: row;
   flex-wrap: wrap;
@@ -202,33 +204,66 @@ footer {
   .contenedordesayuno .descaja1 {
     background-image: url(../img/imgchicas/desayunoaniversario.jpg);
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+    border-radius: 10px;
     width: 200px;
     height: 200px;
     border: solid 3px black;
     font-size: 1rem;
-    background-position: bottom; }
+    background-position: bottom;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-shadow: 1px 1px 0 black;
+    color: aliceblue;}
   .contenedordesayuno .descaja2 {
     background-image: url(../img/imgchicas/desayunocumple.jpg);
     background-size: cover;
     width: 200px;
     height: 200px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+    border-radius: 10px;
     border: solid 3px black;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     font-size: 1rem;
     text-align: center;
     background-position: bottom; }
   .contenedordesayuno .descaja3 {
     background-image: url(../img/imgchicas/desayunopadre.jpg);
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     width: 200px;
     height: 200px;
     border: solid 3px black;
     font-size: 1rem;
     text-align: center;
+    color: aliceblue;
     background-position: center; }
   .contenedordesayuno .descaja4 {
     background-image: url(../img/imgchicas/desayunomadre.jpg);
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     width: 200px;
+    color: aliceblue;
+    text-shadow: 1px 1px 0 black;
     height: 200px;
     border: solid 3px black;
     font-size: 1rem;
@@ -236,6 +271,14 @@ footer {
   .contenedordesayuno .descaja5 {
     background-image: url(../img/desayunos/desayunopersonalizado.jpeg);
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+    border-radius: 10px;
+    color: steelblue;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     width: 200px;
     height: 200px;
     border: solid 3px black;
@@ -244,6 +287,13 @@ footer {
   .contenedordesayuno .descaja6 {
     background-image: url(../img/desayunos/desayunomate.jpeg);
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+    border-radius: 10px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     width: 200px;
     height: 200px;
     border: solid 3px black;
@@ -253,12 +303,49 @@ footer {
     background-image: url(../img/imgchicas/desayunosaludable.jpg);
     background-position: center;
     background-size: cover;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+    border-radius: 10px;
+    color: aliceblue;
+    text-shadow: 1px 1px 0 black;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    align-content: center;
     width: 200px;
     height: 200px;
     border: solid 3px black;
     font-size: 1rem;
     text-align: center; }
 
+.descaja1:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.descaja2:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.descaja3:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.descaja4:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.descaja5:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.descaja6:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+.descaja7:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5%);
+}
 .bodycontact {
   background-color: #807EFD; }
   .bodycontact .tituloscontact {
